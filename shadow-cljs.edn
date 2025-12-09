@@ -1,0 +1,10 @@
+{:deps true
+ :builds
+ {:app {:target :esm
+        :output-dir "out"
+        :modules {:main {:entries [app.core]
+                         :init-fn app.core/init}}
+        :js-options {:js-provider :import}
+        :runtime :custom
+        :devtools {:client-ns blender.repl.client
+                   :preloads [uix.preload]}}}}

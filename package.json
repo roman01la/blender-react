@@ -1,0 +1,25 @@
+{
+  "name": "blender-react",
+  "version": "1.0.0",
+  "main": "plugin.js",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js out/main.js bundle.js development",
+    "build:prod": "node build.js out/main.js bundle.js production",
+    "watch": "node build.js out/main.js bundle.js development --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.4",
+    "@babel/preset-react": "^7.27.1",
+    "esbuild": "^0.25.11",
+    "process": "^0.11.10",
+    "react": "19.2.0",
+    "react-reconciler": "0.33.0",
+    "react-refresh": "^0.18.0"
+  }
+}
